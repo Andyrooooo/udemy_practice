@@ -31,7 +31,7 @@ const markHigherBMI = marksBmi > johnsBmi
 console.log(marksBmi, johnsBmi, markHigherBMI) */
 
 
-const firstName = 'Jonas'
+/* const firstName = 'Jonas'
 const job = 'teacher'
 const birthYear = 1991
 const year = 2037
@@ -40,5 +40,34 @@ const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + 
 console.log(jonas)
 
 const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`
-console.log(jonasNew)
+console.log(jonasNew) */
+
+
+
+
+/* Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
+
+1. Print a nice output to the console, saying who has the higher BMI. The message can
+ be either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+
+2. Use a template literal to include the BMI values in the outputs. Example: "Mark's 
+BMI (28.3) is higher than John's (23.9)!" */
+
+const marksWeight = 78
+const marksHeight = 1.69
+const johnsWeight = 92
+const johnsHeight = 1.95
+
+const marksBmi = marksWeight / marksHeight ** 2 
+const johnsBmi = johnsWeight / johnsHeight ** 2
+
+
+if (marksBmi > johnsBmi) {
+    console.log("Mark's BMI is higher than John's!")
+} else {
+    console.log("Johns BMI is higher")
+}
+
+const markAndJohn = `Mark's BMI ${marksBmi} is higher than John's ${johnsBmi}!`
+console.log(markAndJohn)
 
