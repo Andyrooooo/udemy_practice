@@ -17,8 +17,11 @@ let todos = [
     }
   ];
 
-  console.log(typeof todos)
-
+document.querySelector('#add').addEventListener('click', function() {
+    let task = document.querySelector('#text')
+    document.querySelector('#displayList').textContent = task
+    console.log(task)
+})
 /*   const displayList = document.querySelector('#displayList')
 
   for( let i = 0; i < 3; i++) {
